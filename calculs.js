@@ -14,7 +14,19 @@ function egal() {
   // alert(resultat);
 }
 
-/*
+function clear (){
+ updateScreen()
+}
+
+/* Mocks */
+/* "fausses fonctions" */
+function updateScreen(){
+  console.warn("We need to implement updateScreen")
+}
+
+ function bach (){
+   
+ }
 
 document.getElementById("idDeL'element")
 
