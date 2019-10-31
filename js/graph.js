@@ -12,21 +12,18 @@ const canvasSize = {
 };
 
 ctx.fillStyle = "#000000";
+ctx.lineWidth = "2";
 
 //a mettre au moment du enter en mode graph
 
 makeABoard = function () {
     for (let i = -10; i <= 10; i++) {
-       x.push (i);
+        x.push(i);
     };
 };
 
-drawGraph = function (inp){
+drawGraph = function (inp) {
     x.forEach(inp);
-        var y = eval(inp);
-        ctx.moveTo(y);
-    };
-
-// updateAff (){
-
-// }
+    var y = eval(inp);
+    var tab = [];
+};
