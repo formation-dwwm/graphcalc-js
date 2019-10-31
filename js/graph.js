@@ -11,6 +11,8 @@ const canvasSize = {
     y: document.body.scrollWidth
 };
 
+ctx.fillStyle = "#000000";
+
 //a mettre au moment du enter en mode graph
 
 makeABoard = function () {
@@ -19,11 +21,11 @@ makeABoard = function () {
     };
 };
 
-drawGraph (inp){
-    tabl.forEach(x => {
-        x 
-    });
-}
+drawGraph = function (inp){
+    x.forEach(inp);
+        var y = eval(inp);
+        ctx.moveTo(y);
+    };
 
 // updateAff (){
 
