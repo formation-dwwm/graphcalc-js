@@ -1,103 +1,75 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(rgb(250, 250, 250), rgb(89, 168, 173)) ;
+}
+
 .grid-container {
     display: grid;
-    grid-template-columns: 100px 100px 100px 100px;
-    grid-template-rows: 300px 100px 100px 100px 100px 100px 100px;
-    grid-template-areas: "screen screen screen screen""graph . retour clear""btn-X par-g par-d add""btn-7 btn-8 btn-9 minus""btn-4 btn-5 btn-6 multip""btn-1 btn-2 btn-3 divide""virg btn-0 neg equal";
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 90px);
+    grid-template-rows: minmax(220px, auto) repeat(6, 70px);
+    grid-gap: 3px;
+}
+
+.grid-container > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.btn-num:hover, button:hover {
+    background-color: rgb(155, 155, 155);
+}
+
+.operator:hover {
+    background-color: rgb(29, 96, 151);
+}
+
+.delete:hover {
+    background-color: rgb(255, 201, 23);
+}
+
+.all-clear:hover {
+    background-color: rgb(220, 20, 60);
+}
+
+.span-two {
+    grid-column: span 2;
 }
 
 .screen {
-    grid-area: screen;
-    border: black solid 1px;
+    grid-column: 1 / -1;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
-.clear {
-    grid-area: clear;
+.screen .previous-operand {
+    color: rgba(0, 0, 0, .75);
+    font-size: 1.5rem;
 }
 
-.add {
-    grid-area: add;
-}
-
-.minus {
-    grid-area: minus;
-}
-
-.multip {
-    grid-area: multip;
-}
-
-.divide {
-    grid-area: divide;
-}
-
-.equal {
-    grid-area: equal;
-}
-
-.retour {
-    grid-area: retour;
-}
-
-.par-d {
-    grid-area: par-d;
-}
-
-.btn-9 {
-    grid-area: btn-9;
-}
-
-.btn-6 {
-    grid-area: btn-6;
-}
-
-.btn-3 {
-    grid-area: btn-3;
-}
-
-.neg {
-    grid-area: neg;
-}
-
-.graph {
-    grid-area: graph;
-}
-
-.par-g {
-    grid-area: par-g;
-}
-
-.btn-8 {
-    grid-area: btn-8;
-}
-
-.btn-5 {
-    grid-area: btn-5;
-}
-
-.btn-2 {
-    grid-area: btn-2;
-}
-
-.btn-0 {
-    grid-area: btn-0;
-}
-
-.btn-X {
-    grid-area: btn-X;
-}
-
-.btn-7 {
-    grid-area: btn-7;
-}
-
-.btn-4 {
-    grid-area: btn-4;
-}
-
-.btn-1 {
-    grid-area: btn-1;
-}
-
-.virg {
-    grid-area: virg;
+.screen .current-operand {
+    color: black;
+    font-size: 2.5rem;
 }
