@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,35 +8,48 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="script.js"></script>
-    <title>Document</title>
+    <title>Our Calculator</title>
 </head>
+
 <body>
-    
+
     <div class="grid-container">
-        <div class="screen"></div>
-        <button class="clear" value="clear">C</button>
-        <button class="add" value="+">+</button>
-        <button class="minus" value="-">-</button>
-        <button class="multip" value="*">*</button>
-        <button class="divide" value="/">/</button>
-        <button class="equal" value="=">=</button>
-        <button class="retour" value="return">R</button>
-        <button class="par-d" value=")">)</button>
-        <button class="btn-9" value="9">9</button>
-        <button class="btn-6" value="6">6</button>
-        <button class="btn-3" value="3">3</button>
-        <button class="neg" value="(-)">&plusmn;</button>
-        <button class="graph">Graph</button>
-        <button class="par-g" value="(">(</button>
-        <button class="btn-8" value="8">8</button>
-        <button class="btn-5" value="5">5</button>
-        <button class="btn-2" value="2">2</button>
-        <button class="btn-0" value="0">0</button>
+
+        <div class="screen">
+            <div class="previous-operand"></div>
+            <div class="current-operand"></div>
+        </div>
+
+        <button class="graph span-two">Graph</button>
+        <button class="delete" value="return">DEL</button>
+        <button class="all-clear" value="clear">AC</button>
+
         <button class="btn-X" value="X">X</button>
+        <button class="par-left" value="(">(</button>
+        <button class="par-right" value=")">)</button>
+        <button class="divide" value="/">/</button>
+
         <button class="btn-7" value="7">7</button>
+        <button class="btn-8" value="8">8</button>
+        <button class="btn-9" value="9">9</button>
+        <button class="multip" value="*">*</button>
+
         <button class="btn-4" value="4">4</button>
+        <button class="btn-5" value="5">5</button>
+        <button class="btn-6" value="6">6</button>
+        <button class="minus" value="-">-</button>
+
         <button class="btn-1" value="1">1</button>
-        <button class="virg" value=".">,</button>
-      </div>
-    </body>
+        <button class="btn-2" value="2">2</button>
+        <button class="btn-3" value="3">3</button>
+        <button class="add" value="+">+</button>
+
+        <button class="period" value=".">.</button>
+        <button class="btn-0" value="0">0</button>
+        <button class="neg" value="(-)">&plusmn;</button>
+        <button class="equal" value="=">=</button>
+
+    </div>
+</body>
+
 </html>
