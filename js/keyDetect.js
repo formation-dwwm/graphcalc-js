@@ -27,10 +27,14 @@ function keyDetect(evt) {
         }
 
         // = --> Enter
-        if ((evt.keyCode == 13)) {
+        if (evt.keyCode == 13) {
                 equalKeyPressed();
         }
 
+        // g --> toggleMode
+        if (evt.keyCode == 103) {
+                toggleMode();
+        }
 }
 
 function deleteClearDetect(evt) {
