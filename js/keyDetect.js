@@ -1,4 +1,4 @@
-function test(evt) {
+function keyDetect(evt) {
         //  0-9
         if ((evt.keyCode > 47) && (evt.keyCode < 58)) {
                 inputKeyPressed(evt.key);
@@ -10,12 +10,12 @@ function test(evt) {
         }
 
         // "x"
-        if ((evt.keyCode == 120)) {
-                // code
+        if (evt.keyCode == 120) {
+                inputKeyPressed(evt.key);
         }
 
         // "," --> "."
-        if ((evt.keyCode == 46)) {
+        if (evt.keyCode == 46) {
                 inputKeyPressed(evt.key);
         }
 
@@ -26,16 +26,23 @@ function test(evt) {
                 inputKeyPressed(evt.key);
         }
 
-        // Del --> backspace
-
-
-        // AC --> escape
 
 
         // = --> Enter
         if ((evt.keyCode == 13)) {
                 equalKeyPressed();
         }
+}
 
-        // alert(evt.keyCode);
+function deleteClearDetect(evt) {
+        // Del --> backspace
+        if (evt.keyCode == 8) {
+                backKeyPressed();
+        }
+
+
+        // AC --> escape
+        if (evt.keyCode == 27) {
+                clearKeyPressed();
+        }
 }
