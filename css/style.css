@@ -54,8 +54,9 @@ body {
     grid-column: 1 / -1;
     background-color: rgb(241, 241, 241);
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
+    text-align: right;
+    /* align-items: flex-end; */
+    /*justify-content: space-around;*/
     flex-direction: column;
     padding: 10px;
     word-wrap: break-word;
@@ -64,12 +65,36 @@ body {
     border-radius: 10px;
 }
 
-.screen .previous-operand {
-    color: rgba(0, 0, 0, .75);
+.screen .screen-view {
+    position: relative;
+    color: black;
+    font-size: 2.5rem;
+    width: 100%;
+    height: calc(100% - 29px);
+
+}
+
+.screen .input-view {
+    color: black;
     font-size: 1.5rem;
 }
 
-.screen .current-operand {
-    color: black;
-    font-size: 2.5rem;
+canvas {
+    background-color: green;
 }
+
+#canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  
+  #canvas.hidden {
+    display: none;
+  }
+  
+ 
+  

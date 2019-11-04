@@ -15,8 +15,16 @@
     <div class="grid-container">
 
         <div class="screen">
-            <div class="previous-operand">1+1</div>
-            <div class="current-operand">2</div>
+            <div class="screen-view">
+                <canvas id="canvas" class="hidden">
+                    <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+                </canvas>
+                <div class="text-result">
+                    1+1 = 2
+                </div>
+            </div>
+            <div class="input-view">1+1</div>
+            
         </div>
 
         <button class="graph span-two">Graph</button>
