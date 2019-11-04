@@ -3,33 +3,51 @@ var screenData = "";
 
 function inputKeyPressed(touche) {
   userInput = userInput + touche;
-  
+  updateScreen();
   //  document.getElementById("calcul").innerText = userinput;
   // alert(userinput);
 }
 
 function clearKeyPressed() {
-  updateScreen()
+  screenData = userInput = ""; // userInput.substr(0,length);
+  updateScreen();
+
 }
 
 function backKeyPressed() {
-  
+  userInput = userInput.substr(0,userInput.length -1);
+  screenData = "";
+  updateScreen(); 
 }
 
 
 function calculate() {
-  screenData = eval(userInput);
+  try {
+    screenData = eval(userInput);
+  }
+  catch {
+    screenData = "Error";
+  }
   
   // document.getElementById("resultat").innerText = screendata;
   // alert(resultat);
+
+  // Update our display
+  updateScreen();
 }
 
 /* Mocks */
 /* "fausses fonctions" */
 function updateScreen(){
-  console.warn("We need to implement updateScreen")
+  var $divPrevious = document.querySelector(".previous-operand");
+  var $divCurrent = document.querySelector(".current-operand");
+  
+  $divPrevious.textContent = userInput;
+  $divCurrent.textContent = screenData;
+  // console.warn("We need to implement updateScreen")
 }
 
+/*
 document.getElementById("idDeL'element")
 
 Cette fonction récupère l'élement HTML avec l'id correspondant
