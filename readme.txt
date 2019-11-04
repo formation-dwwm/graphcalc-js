@@ -10,6 +10,14 @@ img
 
 merci des bisous vous etes super j'en fait trop ne changer rien ^^
 
+Définition des touches:
+- La touche entrée du clavier physique doit correspondre à la fonction égale.
+- Les touches numériques  0-9, ".", opérateurs ainsi que les parenthèses sont identiques à celles du clavier virtuel
+- La touche "p" correspond à la touche  "plus ou moins" du clavier virtuel
+- La touche "g" affiche ou masque le graphique ce qui  correspond à "Graph" sur clavier virtuel 
+- La touche escape pour tout effacer correspond à "AC" sur clavier virtuel
+- La touche "BackSpace" pour  supprimer le dernier caractère correspond à "DEL" sur clavier virtuel
+
 --- Variables ---
 	- userInput
 		représente saisie utilisateur
