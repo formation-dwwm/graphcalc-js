@@ -1,5 +1,6 @@
 var userInput = "";
 var screenData = "";
+var currentMode = "calc";
 
 function inputKeyPressed(touche) {
   userInput = userInput + touche;
@@ -19,6 +20,16 @@ function backKeyPressed() {
   updateScreen(); 
 }
 
+function equalKeyPressed() {
+  // If we're in graph mode
+  if (currentMode === "graph"){
+    drawGraph();
+  }
+  // Otherwise, just do the maths
+  else {
+    calculate();
+  }
+}
 
 function calculate() {
   try {
@@ -47,7 +58,7 @@ function updateScreen(){
   // Re-insert our cursor if the user input is empty
   if (userInput.length === 0)
   {
-    $divInput.innerHTML = '<span id="cursor">|</span>';
+    $divInput.innerHTML = '<span id="cursor"><img src="assets/heart-removebg-preview.png"></span>';
   }
   // console.warn("We need to implement updateScreen")
 }
@@ -79,3 +90,4 @@ function toggleCursor() {
 }
 
 setInterval(toggleCursor, speed);
+updateScreen();

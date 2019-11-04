@@ -20,7 +20,7 @@
                 </canvas>
                 <div class="text-result"></div>
             </div>
-            <div class="input-view"><span id="cursor">|</span></div>
+            <div class="input-view"><span id="cursor"><img src="assets/heart-removebg-preview.png"></span></div>
         </div>
 
         <button class="graph span-two" id="btn-graph" onclick="toggleMode(this)">Graph</button>
@@ -50,10 +50,11 @@
         <button class="period btn-num" onclick="inputKeyPressed('.')">.</button>
         <button class="btn-0 btn-num" onclick="inputKeyPressed('0')">0</button>
         <button class="neg btn-num" onclick="inputKeyPressed('-')">&plusmn;</button>
-        <button class="equal operator" onclick="calculate()">=</button>
+        <button class="equal operator" onclick="equalKeyPressed()">=</button>
 
     </div>
     <script type="text/javascript" src="js/calculs.js"></script>
+    <script type="text/javascript" src="js/graph.js"></script>
     <script src="js/toggleMode.js"></script>
     <script src="js/keyDetect.js"></script>
 </body>
