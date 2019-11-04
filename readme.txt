@@ -25,7 +25,11 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 
 --- Fonctions ---
 	- inputKeyPressed
-		-Mettre à jour userInput
+		- Mettre à jour userInput
 
+	- updateInputView
+		- Mise à jour du contenu textuel de la zone de saisie à partir de userInput
+	- updateScreenView
 
+		- Mise à jour du contenu textuel de la zone de calcul à partir de screenData
 		
