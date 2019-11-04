@@ -92,7 +92,7 @@ canvas {
     width: 100%;
   }
   
-  #canvas.hidden {
+#canvas.hidden {
     display: none;
   }
   
