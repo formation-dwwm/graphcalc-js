@@ -33,7 +33,7 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 		- Mettre à jour screenData avec calcul + résultat
 		- Mettre à jour userInput à sa valeur par défaut
 		- updateScreenView
-		-updateInputView
+		- updateInputView
 
 	- updateInputView
 		- Mise à jour du contenu textuel de la zone de saisie à partir de userInput
