@@ -16,18 +16,16 @@
 
         <div class="screen">
             <div class="screen-view">
-                <canvas id="canvas" class="hidden">
+                <canvas id="canvas" class="hidden" style="width:347px; height:169px ;">
                     <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
                 </canvas>
-                <div class="text-result">
-                    1+1 = 2
-                </div>
+                <div class="text-result"></div>
             </div>
-            <div class="input-view">1+1</div>
+            <div class="input-view"></div>
             
         </div>
 
-        <button class="graph span-two">Graph</button>
+        <button class="graph span-two" id="btn-graph" onclick="toggleMode(this)">Graph</button>
         <button class="delete">DEL</button>
         <button class="all-clear">AC</button>
 
@@ -57,6 +55,8 @@
         <button class="equal operator">=</button>
 
     </div>
+
+    <script src="js/toggleMode.js"></script>
 </body>
 
 </html>
