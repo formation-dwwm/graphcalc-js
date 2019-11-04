@@ -22,6 +22,9 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 		représente ce qui doit être affiché à l'écran (de calcul)
 		<string>
 		valeur par défaut: ""
+		
+	- currentMode
+		"calc" | "graph"
 
 --- Fonctions ---
 	- inputKeyPressed
