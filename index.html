@@ -10,8 +10,7 @@
     <title>Our Calculator</title>
 </head>
 
-<body>
-
+<body onkeypress="test(event);">
     <div class="grid-container">
 
         <div class="screen">
@@ -21,43 +20,42 @@
                 </canvas>
                 <div class="text-result"></div>
             </div>
-            <div class="input-view"></div>
-            
+            <div class="input-view"><span id="cursor">|</span></div>
         </div>
 
-        <button class="graph span-two" id="btn-graph">Graph</button>
-        <button class="delete">DEL</button>
-        <button class="all-clear">AC</button>
+        <button class="graph span-two" id="btn-graph" onclick="toggleMode(this)">Graph</button>
+        <button class="delete" onclick="backKeyPressed()">DEL</button>
+        <button class="all-clear" onclick="clearKeyPressed()">AC</button>
 
-        <button class="btn-X">X</button>
-        <button class="par-left">(</button>
-        <button class="par-right">)</button>
-        <button class="divide operator">/</button>
+        <button class="btn-X" onclick="inputKeyPressed('x')">X</button>
+        <button class="par-left" onclick="inputKeyPressed('(')">(</button>
+        <button class="par-right" onclick="inputKeyPressed(')')">)</button>
+        <button class="divide operator" onclick="inputKeyPressed('/')">/</button>
 
-        <button class="btn-7 btn-num">7</button>
-        <button class="btn-8 btn-num">8</button>
-        <button class="btn-9 btn-num">9</button>
-        <button class="multip operator">*</button>
+        <button class="btn-7 btn-num" onclick="inputKeyPressed('7')">7</button>
+        <button class="btn-8 btn-num" onclick="inputKeyPressed('8')">8</button>
+        <button class="btn-9 btn-num" onclick="inputKeyPressed('9')">9</button>
+        <button class="multip operator" onclick="inputKeyPressed('*')">*</button>
 
-        <button class="btn-4 btn-num">4</button>
-        <button class="btn-5 btn-num">5</button>
-        <button class="btn-6 btn-num">6</button>
-        <button class="minus operator">-</button>
+        <button class="btn-4 btn-num" onclick="inputKeyPressed('4')">4</button>
+        <button class="btn-5 btn-num" onclick="inputKeyPressed('5')">5</button>
+        <button class="btn-6 btn-num" onclick="inputKeyPressed('6')">6</button>
+        <button class="minus operator" onclick="inputKeyPressed('-')">-</button>
 
-        <button class="btn-1 btn-num">1</button>
-        <button class="btn-2 btn-num">2</button>
-        <button class="btn-3 btn-num">3</button>
-        <button class="add operator">+</button>
+        <button class="btn-1 btn-num" onclick="inputKeyPressed('1')">1</button>
+        <button class="btn-2 btn-num" onclick="inputKeyPressed('2')">2</button>
+        <button class="btn-3 btn-num" onclick="inputKeyPressed('3')">3</button>
+        <button class="add operator" onclick="inputKeyPressed('+')">+</button>
 
-        <button class="period btn-num">.</button>
-        <button class="btn-0 btn-num">0</button>
-        <button class="neg btn-num">&plusmn;</button>
-        <button class="equal operator">=</button>
+        <button class="period btn-num" onclick="inputKeyPressed('.')">.</button>
+        <button class="btn-0 btn-num" onclick="inputKeyPressed('0')">0</button>
+        <button class="neg btn-num" onclick="inputKeyPressed('-')">&plusmn;</button>
+        <button class="equal operator" onclick="calculate()">=</button>
 
     </div>
-
-    <!-- <script src="js/keyDetect.js"></script> -->
+    <script type="text/javascript" src="js/calculs.js"></script>
     <script src="js/toggleMode.js"></script>
+    <script src="js/keyDetect.js"></script>
 </body>
 
 </html>

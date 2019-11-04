@@ -1,6 +1,16 @@
 function test(evt){
+    //  0-9
+    if((evt.keyCode>47) && (evt.keyCode<58))
+        {
+            inputKeyPressed(evt.key);               
+        }
     
-        alert(evt);
+       // 
+    //    alert(evt.keyCode);
+// if(evt.key ==){
+//     backKeyPressed();
+// }
+       
 }
 
 
