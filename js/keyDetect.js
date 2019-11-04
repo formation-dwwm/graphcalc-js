@@ -26,11 +26,14 @@ function keyDetect(evt) {
                 inputKeyPressed(evt.key);
         }
 
-
-
         // = --> Enter
-        if ((evt.keyCode == 13)) {
+        if (evt.keyCode == 13) {
                 equalKeyPressed();
+        }
+
+        // g --> toggleMode
+        if (evt.keyCode == 103) {
+                toggleMode();
         }
 }
 
