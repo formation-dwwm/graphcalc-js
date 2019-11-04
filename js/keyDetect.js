@@ -14,21 +14,28 @@ function test(evt) {
                 // code
         }
 
+        // "," --> "."
+        if ((evt.keyCode == 46)) {
+                inputKeyPressed(evt.key);
+        }
+
+        // +- --> ?
+
         // "(" and ")"
         if ((evt.keyCode == 40) || (evt.keyCode == 41)) {
                 inputKeyPressed(evt.key);
         }
 
-        // backspace
+        // Del --> backspace
 
 
-        // Del
+        // AC --> escape
 
-        // Enter
+
+        // = --> Enter
         if ((evt.keyCode == 13)) {
-                //calculate();
+                equalKeyPressed();
         }
 
-
-        alert(evt.key);
+        // alert(evt.keyCode);
 }
