@@ -26,12 +26,11 @@ function keyDetect(evt) {
                 inputKeyPressed(evt.key);
         }
 
-
-
         // = --> Enter
         if ((evt.keyCode == 13)) {
                 equalKeyPressed();
         }
+
 }
 
 function deleteClearDetect(evt) {
@@ -45,4 +44,5 @@ function deleteClearDetect(evt) {
         if (evt.keyCode == 27) {
                 clearKeyPressed();
         }
+
 }
