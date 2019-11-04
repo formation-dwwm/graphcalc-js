@@ -11,7 +11,6 @@ function inputKeyPressed(touche) {
 function clearKeyPressed() {
   screenData = userInput = ""; // userInput.substr(0,length);
   updateScreen();
-
 }
 
 function backKeyPressed() {
@@ -44,6 +43,12 @@ function updateScreen(){
   
   $divInput.textContent = userInput;
   $divResult.textContent = screenData;
+
+  // Re-insert our cursor if the user input is empty
+  if (userInput.length === 0)
+  {
+    $divInput.innerHTML = '<span id="cursor">|</span>';
+  }
   // console.warn("We need to implement updateScreen")
 }
 
@@ -53,3 +58,24 @@ document.getElementById("idDeL'element")
 Cette fonction récupère l'élement HTML avec l'id correspondant
 Ce qui nous permet de le manipuler
 */
+
+var cursor = true;
+var speed = 300;
+
+function toggleCursor() {
+  try {
+    if(cursor) {
+      document.getElementById('cursor').style.opacity = 0;
+      cursor = false;
+    }
+    else {
+      document.getElementById('cursor').style.opacity = 1;
+      cursor = true;
+    }
+  }
+  catch {
+    // Suppress exception, not relevant
+  }
+}
+
+setInterval(toggleCursor, speed);
