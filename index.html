@@ -11,15 +11,19 @@
 </head>
 
 <body>
-
     <div class="grid-container">
 
         <div class="screen">
-            <div class="previous-operand"></div>
-            <div class="current-operand"></div>
+            <div class="screen-view">
+                <canvas id="canvas" class="hidden" style="width:347px; height:169px ;">
+                    <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
+                </canvas>
+                <div class="text-result"></div>
+            </div>
+            <div class="input-view"></div>
         </div>
 
-        <button class="graph span-two">Graph</button>
+        <button class="graph span-two" id="btn-graph" onclick="toggleMode(this)">Graph</button>
         <button class="delete" onclick="backKeyPressed()">DEL</button>
         <button class="all-clear" onclick="clearKeyPressed()">AC</button>
 
@@ -50,6 +54,7 @@
 
     </div>
     <script type="text/javascript" src="js/calculs.js"></script>
+    <script src="js/toggleMode.js"></script>
 </body>
 
 </html>

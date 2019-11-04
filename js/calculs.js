@@ -39,11 +39,11 @@ function calculate() {
 /* Mocks */
 /* "fausses fonctions" */
 function updateScreen(){
-  var $divPrevious = document.querySelector(".previous-operand");
-  var $divCurrent = document.querySelector(".current-operand");
+  var $divInput = document.querySelector(".input-view");
+  var $divResult = document.querySelector(".text-result");
   
-  $divPrevious.textContent = userInput;
-  $divCurrent.textContent = screenData;
+  $divInput.textContent = userInput;
+  $divResult.textContent = screenData;
   // console.warn("We need to implement updateScreen")
 }
 
