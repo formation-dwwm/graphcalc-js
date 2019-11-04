@@ -37,10 +37,17 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 		- Mettre à jour userInput à sa valeur par défaut
 		- updateScreenView
 		- updateInputView
+		- if (currentMode = "graph") {
+			//?
+			drawGraph ();
+		  }
 
 	- updateInputView
 		- Mise à jour du contenu textuel de la zone de saisie à partir de userInput
 
 	- updateScreenView
 		- Mise à jour du contenu textuel de la zone de calcul à partir de screenData
+		
+	- toggleMode
+		- currentMode !
 		
