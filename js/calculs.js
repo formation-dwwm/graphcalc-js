@@ -1,6 +1,6 @@
 var userInput = "";
 var screenData = "";
-var currentMode = "";
+var currentMode = "calc";
 
 function inputKeyPressed(touche) {
   userInput = userInput + touche;
@@ -23,7 +23,7 @@ function backKeyPressed() {
 function equalKeyPressed() {
   // If we're in graph mode
   if (currentMode === "graph"){
-    DrawGraph();
+    drawGraph();
   }
   // Otherwise, just do the maths
   else {

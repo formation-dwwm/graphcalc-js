@@ -50,7 +50,7 @@ drawGraph = function () {
         var evalResult = eval(userInput);
         var posx = x * zoom.x; 
         var posy = evalResult * zoom.y;
-        var posy = posy * -zoom.y;
+        posy = posy * -zoom.y;
         if (x === -10) {
             ctx.moveTo(posx, posy);
         } else {
