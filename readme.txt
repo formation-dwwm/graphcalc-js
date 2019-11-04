@@ -12,28 +12,27 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 
 --- Variables ---
 	- userInput
-		représente saisie utilisateur
+		reprÃ©sente saisie utilisateur
 		<string>
-		valeur par défaut: ""
-			- mise à jour lors appui touche
-			- utilisé lors de =
+		valeur par dÃ©faut: ""
+			- mise Ã  jour lors appui touche
+			- utilisÃ© lors de =
 
 	- screenData
-		représente ce qui doit être affiché à l'écran (de calcul)
+		reprÃ©sente ce qui doit Ãªtre affichÃ© Ã  l'Ã©cran (de calcul)
 		<string>
-		valeur par défaut: ""
+		valeur par dÃ©faut: ""
 
 --- Fonctions ---
 	- inputKeyPressed
-		- Mettre à jour userInput
+		- Mettre Ã  jour userInput
 		- puis updateInputView
 
 	- calculate =
 
 	- updateInputView
-		- Mise à jour du contenu textuel de la zone de saisie à partir de userInput
+		- Mise Ã  jour du contenu textuel de la zone de saisie Ã  partir de userInput
 
 	- updateScreenView
-
-		- Mise à jour du contenu textuel de la zone de calcul à partir de screenData
+		- Mise Ã  jour du contenu textuel de la zone de calcul Ã  partir de screenData
 		
