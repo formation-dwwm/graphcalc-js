@@ -1,52 +1,47 @@
 function keyDetect(evt) {
-        //  0-9
-        if ((evt.keyCode > 47) && (evt.keyCode < 58)) {
-                inputKeyPressed(evt.key);
-        }
-
-        // Opérateurs: multiply Add Minus ...
-        if ((evt.keyCode == 42) || (evt.keyCode == 43) || (evt.keyCode == 45) || (evt.keyCode == 47)) {
+        //  0-9 and Operator
+        if ((evt.code.indexOf("Numpad") > -1) && (evt.code != "NumpadEnter")) {
+      
                 inputKeyPressed(evt.key);
         }
 
         // "x"
-        if (evt.keyCode == 120) {
+        if (evt.code == "KeyX") {
                 inputKeyPressed(evt.key);
         }
 
         // "," --> "."
-        if (evt.keyCode == 46) {
-                inputKeyPressed(evt.key);
-        }
+        // if (evt.code == "NumpadDecimal") {
+        //         inputKeyPressed(evt.key);
+        // }
 
         // +- --> ?
 
         // "(" and ")"
-        if ((evt.keyCode == 40) || (evt.keyCode == 41)) {
+        if ((evt.code == "Digit5") || (evt.code == "Minus")) {
                 inputKeyPressed(evt.key);
         }
 
         // = --> Enter
-        if (evt.keyCode == 13) {
+        if( (evt.code == "NumpadEnter") || (evt.code == "Enter")) {
                 equalKeyPressed();
         }
 
         // g --> toggleMode
-        if (evt.keyCode == 103) {
+        if (evt.code == "KeyG") {
                 toggleMode();
         }
-}
 
-function deleteClearDetect(evt) {
-        // Del --> backspace
-        if (evt.keyCode == 8) {
+         // Del --> backspace
+         if (evt.code == "Backspace" ) {
                 backKeyPressed();
         }
 
 
         // AC --> escape
-        if (evt.keyCode == 27) {
+        if (evt.code == "Escape") {
                 clearKeyPressed();
         }
 
 }
+
