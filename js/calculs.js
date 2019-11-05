@@ -17,6 +17,7 @@ function clearKeyPressed() {
   event.target.blur();
 
   screenData = userInput = ""; // userInput.substr(0,length);
+  clearCanvas();
   updateScreen();
 }
 

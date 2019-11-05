@@ -17,9 +17,14 @@ const canvasSize = {
     y: canvas.clientWidth
 };
 
+    var midx = canvasSize.x /2 ;
+    var midy = canvasSize.y /2 ;
+
 udpateCanvasSize = function(){
     canvasSize.x = canvas.clientHeight;
     canvasSize.y = canvas.clientWidth;
+    midx = canvasSize.x /2 ;
+    midy = canvasSize.y /2 ;
     makeAxes();
 }
 
@@ -27,7 +32,6 @@ udpateCanvasSize = function(){
 
 makeABoard = function () {
     udpateCanvasSize();
-
     for (let i = -20; i <= 20; i++) {
         xValues.push(i);
     };
@@ -36,8 +40,6 @@ makeABoard = function () {
 };
 
 makeAxes = function () {
-    var midx = canvasSize.x /2 ;
-    var midy = canvasSize.y /2 ;
     ctx.strokeStyle  = "#000000";
     ctx.lineWidth = 1;
     ctx.beginPath();
@@ -59,9 +61,9 @@ drawGraph = function () {
         var posy = evalResult * zoom.y;
         posy = posy * -zoom.y;
         if (x === -10) {
-            ctx.moveTo(posx, posy);
+            ctx.moveTo(midy + posy, posx + midx);
         } else {
-            ctx.lineTo(posx, posy);
+            ctx.lineTo(midy + posy, posx + midx);
         }
     });
     ctx.stroke();
@@ -82,10 +84,11 @@ drawUserInput = function () {
 
 function clearCanvas() {
     userInput = "";
-    ctx.clearRect(0, 0, canvasSize.x, canvasSize.y);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeText(" ", 200, 290);
+    makeAxes();
 
-    // updateScreen();
+    updateScreen();
     // $divInput = document.querySelector(".input-view");
     // $divInput.textContent = screenGraph + userInput;
 };

@@ -9,11 +9,14 @@ function toggleMode() {
         currentMode = "graph";
         makeABoard();
         clearKeyPressed();
+        clearCanvas();
     }
     else{
         canvasElement.className = "hidden";
         //GROS HACK
         currentMode = "calc";
+        clearKeyPressed();
+        clearCanvas();
     }
   }
 
