@@ -7,7 +7,7 @@ les fichiers images dans le dossier: /img
 
 merci des bisous vous etes super j'en fait trop ne changer rien ^^
 
-Définition des touches:
+#Définition des touches:
 - La touche entrée du clavier physique doit correspondre à la fonction égale.
 - Les touches numériques  0-9, ".", opérateurs ainsi que les parenthèses sont identiques à celles du clavier virtuel
 - La touche "p" correspond à la touche  "plus ou moins" du clavier virtuel
