@@ -81,8 +81,6 @@ body {
 
 canvas {
     background-color: rgba(108, 247, 108, 0.301);
-    width: 347px;
-    height: 180px;
 }
 
 #canvas {
