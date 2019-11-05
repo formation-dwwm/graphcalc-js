@@ -16,42 +16,43 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 - La touche "BackSpace" pour  supprimer le dernier caractère correspond à "DEL" sur clavier virtuel
 
 #Variables
-	- userInput
-		représente saisie utilisateur
-		<string>
-		valeur par défaut: ""
-			- mise à jour lors appui touche
-			- utilisé lors de =
+- userInput
+    représente saisie utilisateur
+    <string>
+    valeur par défaut: " "
+        - mise à jour lors appui touche
+        - utilisé lors de =
+---
 
-	- screenData
+- screenData
 		représente ce qui doit être affiché à l'écran (de calcul)
 		<string>
-		valeur par défaut: ""
+		valeur par défaut: " "
 		
 	- currentMode
 		"calc" | "graph"
 
 #Fonctions
-	- inputKeyPressed
-		- Mettre à jour userInput
-		- puis updateInputView
+- inputKeyPressed
+    - Mettre à jour userInput
+    - puis updateInputView
 
-	- calculate =
-		- = faire calcul depuis userInput
-		- Mettre à jour screenData avec calcul + résultat
-		- Mettre à jour userInput à sa valeur par défaut
-		- updateScreenView
-		- updateInputView
-		- if (currentMode = "graph") {
-			//?
-			drawGraph ();
-		  }
+- calculate =
+    - = faire calcul depuis userInput
+    - Mettre à jour screenData avec calcul + résultat
+    - Mettre à jour userInput à sa valeur par défaut
+    - updateScreenView
+    - updateInputView
+    - if (currentMode = "graph") {
+        //?
+        drawGraph ();
+        }
 
-	- updateInputView
-		- Mise à jour du contenu textuel de la zone de saisie à partir de userInput
+- updateInputView
+    - Mise à jour du contenu textuel de la zone de saisie à partir de userInput
 
-	- updateScreenView
-		- Mise à jour du contenu textuel de la zone de calcul à partir de screenData
+- updateScreenView
+    - Mise à jour du contenu textuel de la zone de calcul à partir de screenData
 		
-	- toggleMode
-		- currentMode !
+- toggleMode
+    - currentMode !
