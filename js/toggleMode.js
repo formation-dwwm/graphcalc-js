@@ -1,22 +1,29 @@
 const canvasElement = document.getElementById("canvas");
+const btnGraphElement = document.getElementById("btn-graph");
 
 function toggleMode() {
 
-    var className = canvasElement.getAttribute("class");
-    if(className=="hidden") {
-        canvasElement.className = "";
-        //GROS HACK
+    if(canvasElement.classList.contains('hidden')){
+        canvasElement.classList.remove('hidden');
         currentMode = "graph";
         makeABoard();
-        clearKeyPressed();
-        clearCanvas();
     }
-    else{
-        canvasElement.className = "hidden";
-        //GROS HACK
+    else
+    {
+        canvasElement.classList.add('hidden');
         currentMode = "calc";
-        clearKeyPressed();
-        clearCanvas();
     }
+    clearKeyPressed();
+    clearCanvas();
+    colorBtnGraph();
   }
 
+function colorBtnGraph () {
+    if (btnGraphElement.classList.contains('graph-active')) {
+        btnGraphElement.classList.remove('graph-active');
+    }
+    else 
+    {
+        btnGraphElement.classList.add('graph-active');
+    }
+}

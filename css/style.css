@@ -34,6 +34,10 @@ body {
     background-color: rgb(155, 155, 155);
 }
 
+.grid-container > .graph-active {
+    background-color: rgb(36, 143, 36);
+}
+
 .operator:hover {
     background-color: rgb(29, 96, 151);
 }
@@ -49,6 +53,8 @@ body {
 .span-two {
     grid-column: span 2;
 }
+
+
 
 .screen {
     grid-column: 1 / -1;
