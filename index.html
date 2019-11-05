@@ -13,7 +13,7 @@
 <body  onkeydown="keyDetect(event);">
     <div class="grid-container">
 
-        <div class="screen">
+        <div class="screen item">
             <div class="screen-view">
                 <canvas id="canvas" class="hidden" width="347px" height="180px">
                     <p>Désolé, votre navigateur ne supporte pas Canvas. Mettez-vous à jour</p>
@@ -23,34 +23,34 @@
             <div class="input-view"><span id="cursor"><img src="assets/heart-removebg-preview.png"></span></div>
         </div>
 
-        <button class="graph span-two" id="btn-graph" onclick="graphKeyPressed()">Graph</button>
-        <button class="delete" onclick="backKeyPressed()">DEL</button>
-        <button class="all-clear" onclick="clearKeyPressed()">AC</button>
+        <button class="graph span-two item1" id="btn-graph" onclick="graphKeyPressed()">Graph</button>
+        <button class="delete item2" onclick="backKeyPressed()">DEL</button>
+        <button class="all-clear item3" onclick="clearKeyPressed()">AC</button>
 
-        <button class="btn-X" onclick="inputKeyPressed('x')">X</button>
-        <button class="par-left" onclick="inputKeyPressed('(')">(</button>
-        <button class="par-right" onclick="inputKeyPressed(')')">)</button>
-        <button class="divide operator" onclick="inputKeyPressed('/')">/</button>
+        <button class="btn-X item4" onclick="inputKeyPressed('x')">X</button>
+        <button class="par-left item5" onclick="inputKeyPressed('(')">(</button>
+        <button class="par-right item6" onclick="inputKeyPressed(')')">)</button>
+        <button class="divide operator item7" onclick="inputKeyPressed('/')">/</button>
 
-        <button class="btn-7 btn-num" onclick="inputKeyPressed('7')">7</button>
-        <button class="btn-8 btn-num" onclick="inputKeyPressed('8')">8</button>
-        <button class="btn-9 btn-num" onclick="inputKeyPressed('9')">9</button>
-        <button class="multip operator" onclick="inputKeyPressed('*')">*</button>
+        <button class="btn-7 btn-num item8" onclick="inputKeyPressed('7')">7</button>
+        <button class="btn-8 btn-num item9" onclick="inputKeyPressed('8')">8</button>
+        <button class="btn-9 btn-num item10" onclick="inputKeyPressed('9')">9</button>
+        <button class="multip operator item11" onclick="inputKeyPressed('*')">*</button>
 
-        <button class="btn-4 btn-num" onclick="inputKeyPressed('4')">4</button>
-        <button class="btn-5 btn-num" onclick="inputKeyPressed('5')">5</button>
-        <button class="btn-6 btn-num" onclick="inputKeyPressed('6')">6</button>
-        <button class="minus operator" onclick="inputKeyPressed('-')">-</button>
+        <button class="btn-4 btn-num item12" onclick="inputKeyPressed('4')">4</button>
+        <button class="btn-5 btn-num item13" onclick="inputKeyPressed('5')">5</button>
+        <button class="btn-6 btn-num item14" onclick="inputKeyPressed('6')">6</button>
+        <button class="minus operator item15" onclick="inputKeyPressed('-')">-</button>
 
-        <button class="btn-1 btn-num" onclick="inputKeyPressed('1')">1</button>
-        <button class="btn-2 btn-num" onclick="inputKeyPressed('2')">2</button>
-        <button class="btn-3 btn-num" onclick="inputKeyPressed('3')">3</button>
-        <button class="add operator" onclick="inputKeyPressed('+')">+</button>
+        <button class="btn-1 btn-num item16" onclick="inputKeyPressed('1')">1</button>
+        <button class="btn-2 btn-num item17" onclick="inputKeyPressed('2')">2</button>
+        <button class="btn-3 btn-num item18" onclick="inputKeyPressed('3')">3</button>
+        <button class="add operator item19" onclick="inputKeyPressed('+')">+</button>
 
-        <button class="period btn-num" onclick="inputKeyPressed('.')">.</button>
-        <button class="btn-0 btn-num" onclick="inputKeyPressed('0')">0</button>
-        <button class="neg btn-num" onclick="inputKeyPressed('-')">&plusmn;</button>
-        <button class="equal operator" onclick="equalKeyPressed()">=</button>
+        <button class="period btn-num item20" onclick="inputKeyPressed('.')">.</button>
+        <button class="btn-0 btn-num item21" onclick="inputKeyPressed('0')">0</button>
+        <button class="neg btn-num item22" onclick="inputKeyPressed('-')">&plusmn;</button>
+        <button class="equal operator item23" onclick="equalKeyPressed()">=</button>
 
     </div>
     <script type="text/javascript" src="js/calculs.js"></script>

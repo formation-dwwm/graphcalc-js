@@ -7,17 +7,139 @@
 body {
     padding: 0;
     margin: 0;
-    background: linear-gradient( rgb(89, 168, 173),rgb(250, 250, 250)) ;
+    background: linear-gradient( rgb(89, 168, 173),rgb(250, 250, 250)) no-repeat;
+    height: 100vh;
 }
 
 .grid-container {
     display: grid;
+    display: -ms-grid;
     justify-content: center;
     align-content: center;
+    margin-left: calc(100vw / 2 - 180px);
+    margin-top: calc(100vh /2 - 335px);
     min-height: 100vh;
     grid-template-columns: repeat(4, 90px);
+    -ms-grid-columns: 90px 90px 90px 90px;
     grid-template-rows: minmax(250px, auto) repeat(6, 70px);
+    -ms-grid-rows: 250px 70px 70px 70px 70px 70px 70px;
     grid-gap: 3px;
+}
+
+.item1{
+    -ms-grid-column: 1;
+    -ms-grid-row: 2;
+    -ms-grid-column-span: 2;
+}
+
+.item2{
+    -ms-grid-column: 3;
+    -ms-grid-row: 2;
+}
+
+.item3{
+    -ms-grid-column: 4;
+    -ms-grid-row: 2;
+}
+
+.item4{
+    -ms-grid-column: 1;
+    -ms-grid-row: 3;
+}
+
+.item5{
+    -ms-grid-column: 2;
+    -ms-grid-row: 3;
+}
+
+.item6{
+    -ms-grid-column: 3;
+    -ms-grid-row: 3;
+}
+
+.item7{
+    -ms-grid-column: 4;
+    -ms-grid-row: 3;
+}
+
+.item8{
+    -ms-grid-column: 1;
+    -ms-grid-row: 4;
+}
+
+.item9{
+    -ms-grid-column: 2;
+    -ms-grid-row: 4;
+}
+
+.item10{
+    -ms-grid-column: 3;
+    -ms-grid-row: 4;
+}
+
+.item11{
+    -ms-grid-column: 4;
+    -ms-grid-row: 4;
+}
+
+.item12{
+    -ms-grid-column: 1;
+    -ms-grid-row: 5;
+}
+
+.item13{
+    -ms-grid-column: 2;
+    -ms-grid-row: 5;
+}
+
+.item14{
+    -ms-grid-column: 3;
+    -ms-grid-row: 5;
+}
+
+.item15{
+    -ms-grid-column: 4;
+    -ms-grid-row: 5;
+}
+
+.item16{
+    -ms-grid-column: 1;
+    -ms-grid-row: 6;
+}
+
+.item17{
+    -ms-grid-column: 2;
+    -ms-grid-row: 6;
+}
+
+.item18{
+    -ms-grid-column: 3;
+    -ms-grid-row: 6;
+}
+
+.item19{
+    -ms-grid-column: 4;
+    -ms-grid-row: 6;
+}
+
+.item20{
+    -ms-grid-column: 1;
+    -ms-grid-row: 7;
+}
+
+.item21{
+    -ms-grid-column: 2;
+    -ms-grid-row: 7;
+}
+
+.item22{
+    -ms-grid-column: 3;
+    -ms-grid-row: 7;
+}
+
+.item23{
+    -ms-grid-column: 4;
+    -ms-grid-row: 7;
 }
 
 .grid-container > button {
@@ -58,6 +180,10 @@ body {
 
 .screen {
     grid-column: 1 / -1;
+    -ms-grid-column: 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    -ms-grid-column-span: 4;
     background-color: rgb(241, 241, 241);
     display: flex;
     text-align: right;
