@@ -44,7 +44,3 @@ function keyDetect(evt) {
         }
 
 }
-
-window.addEventListener("click"){
-        
-}
