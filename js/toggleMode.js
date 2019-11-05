@@ -7,6 +7,8 @@ function toggleMode() {
         canvasElement.className = "";
         //GROS HACK
         currentMode = "graph";
+        makeABoard();
+        clearKeyPressed();
     }
     else{
         canvasElement.className = "hidden";
