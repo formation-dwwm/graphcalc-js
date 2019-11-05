@@ -1,4 +1,4 @@
-#Contributing
+# Contributing
 les fichiers Javascript dans le dossier: /js
 
 les fichiers CSS dans le dossier: /css
@@ -7,7 +7,7 @@ les fichiers images dans le dossier: /img
 
 merci des bisous vous etes super j'en fait trop ne changer rien ^^
 
-#Définition des touches:
+# Définition des touches:
 - La touche entrée du clavier physique doit correspondre à la fonction égale.
 - Les touches numériques  0-9, ".", opérateurs ainsi que les parenthèses sont identiques à celles du clavier virtuel
 - La touche "p" correspond à la touche  "plus ou moins" du clavier virtuel
@@ -15,7 +15,7 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 - La touche escape pour tout effacer correspond à "AC" sur clavier virtuel
 - La touche "BackSpace" pour  supprimer le dernier caractère correspond à "DEL" sur clavier virtuel
 
-#Variables
+# Variables
 - userInput
     représente saisie utilisateur
     <string>
@@ -32,7 +32,7 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 	- currentMode
 		"calc" | "graph"
 
-#Fonctions
+# Fonctions
 - inputKeyPressed
     - Mettre à jour userInput
     - puis updateInputView
