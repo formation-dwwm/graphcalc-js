@@ -12,10 +12,14 @@ function keyDetect(evt) {
 
         // "," --> "."
         // if (evt.code == "NumpadDecimal") {
-        //         inputKeyPressed(evt.key);
+        //      inputKeyPressed(evt.key);
         // }
 
-        // +- --> ?
+        // +- --> P
+        if (evt.code == "KeyP") {
+                inputKeyPressed("-");
+        }
+
 
         // "(" and ")"
         if ((evt.code == "Digit5") || (evt.code == "Minus")) {
