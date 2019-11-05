@@ -17,10 +17,18 @@ const canvasSize = {
     y: canvas.clientWidth
 };
 
+udpateCanvasSize = function(){
+    canvasSize.x = canvas.clientHeight;
+    canvasSize.y = canvas.clientWidth;
+    makeAxes();
+}
+
 //A mettre au moment du enter en mode graph
 
 makeABoard = function () {
-    for (let i = -10; i <= 10; i++) {
+    udpateCanvasSize();
+
+    for (let i = -20; i <= 20; i++) {
         xValues.push(i);
     };
     clearCanvas();
@@ -30,14 +38,13 @@ makeABoard = function () {
 makeAxes = function () {
     var midx = canvasSize.x /2 ;
     var midy = canvasSize.y /2 ;
-    ctx.strokeStyle  = "#cacaca";
+    ctx.strokeStyle  = "#000000";
+    ctx.lineWidth = 1;
     ctx.beginPath();
-    ctx.moveTo(midx, 0);
-    ctx.lineTo(midx, canvasSize.y);
-    ctx.stroke();
-    ctx.beginPath();
-    ctx.moveTo(0, midy);
-    ctx.lineTo(canvasSize.x, midy);
+    ctx.moveTo(0, midx);
+    ctx.lineTo(canvasSize.y, midx);
+    ctx.moveTo(midy, 0);
+    ctx.lineTo(midy, canvasSize.x);
     ctx.stroke();
 };
 // = press run this function
@@ -56,7 +63,6 @@ drawGraph = function () {
         } else {
             ctx.lineTo(posx, posy);
         }
-        
     });
     ctx.stroke();
 };
@@ -84,4 +90,5 @@ function clearCanvas() {
     // $divInput.textContent = screenGraph + userInput;
 };
 
-window.onload = makeABoard();
+window.onload = makeABoard;
+window.onresize = udpateCanvasSize;

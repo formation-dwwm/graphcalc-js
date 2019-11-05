@@ -3,6 +3,9 @@ var screenData = "";
 var currentMode = "calc";
 
 function inputKeyPressed(touche) {
+  // Un-focus our button to avoid event re-triggering from keyboard
+  event.target.blur();
+
   userInput = userInput + touche;
   updateScreen();
   //  document.getElementById("calcul").innerText = userinput;
@@ -10,17 +13,26 @@ function inputKeyPressed(touche) {
 }
 
 function clearKeyPressed() {
+  // Un-focus our button to avoid event re-triggering from keyboard
+  event.target.blur();
+
   screenData = userInput = ""; // userInput.substr(0,length);
   updateScreen();
 }
 
 function backKeyPressed() {
+  // Un-focus our button to avoid event re-triggering from keyboard
+  event.target.blur();
+
   userInput = userInput.substr(0,userInput.length -1);
   screenData = "";
   updateScreen(); 
 }
 
 function equalKeyPressed() {
+  // Un-focus our button to avoid event re-triggering from keyboard
+  event.target.blur();
+
   // If we're in graph mode
   if (currentMode === "graph"){
     drawGraph();
@@ -29,6 +41,13 @@ function equalKeyPressed() {
   else {
     calculate();
   }
+}
+
+function graphKeyPressed() {
+    // Un-focus our button to avoid event re-triggering from keyboard
+    event.target.blur();
+
+    toggleMode();
 }
 
 function calculate() {
