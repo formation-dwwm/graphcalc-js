@@ -3,8 +3,8 @@ var xValues = [];
 var screenGraph = "y= ";
 
 var zoom = {
-    x: 1,
-    y: 1
+    x: 5,
+    y: 5
 }
 
 var canvas = document.querySelector('canvas');

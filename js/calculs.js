@@ -72,7 +72,12 @@ function updateScreen(){
   var $divInput = document.querySelector(".input-view");
   var $divResult = document.querySelector(".text-result");
   
-  $divInput.textContent = userInput;
+  var finalUserInput = userInput;
+  if (currentMode === "graph"){
+    finalUserInput = 'y=' + finalUserInput;
+  }
+
+  $divInput.textContent = finalUserInput;
   $divResult.textContent = screenData;
 
   // Re-insert our cursor if the user input is empty

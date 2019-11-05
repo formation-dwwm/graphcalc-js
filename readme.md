@@ -57,3 +57,5 @@ merci des bisous vous etes super j'en fait trop ne changer rien ^^
 		
 - toggleMode
     - currentMode !
+
+    [Lien direct](https://formation-dwwm.github.io/graphcalc-js)
