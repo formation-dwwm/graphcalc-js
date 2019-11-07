@@ -42,6 +42,7 @@ function equalKeyPressed() {
   else {
     calculate();
   }
+  userInput= "";
 }
 
 function graphKeyPressed() {
