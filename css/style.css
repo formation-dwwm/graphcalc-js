@@ -251,3 +251,14 @@ canvas {
     height: 1.5em;
     width: auto;
 }
+
+/* final color of the result */
+.text-result-neg {
+    color: red;
+}
+.text-result-zero {
+    color: black;
+}
+.text-result-pos {
+    color: green;
+}

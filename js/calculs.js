@@ -86,6 +86,13 @@ function updateScreen(){
   {
     $divInput.innerHTML = '<span id="cursor"><img src="assets/heart-removebg-preview.png"></span>';
   }
+  // text color whithin value
+  // toggle color classes on the element $divResult 
+  else {  
+    $divResult.classList.toggle("text-result-neg", screenData < 0);
+    $divResult.classList.toggle("text-result-zero", screenData == 0);
+    $divResult.classList.toggle("text-result-pos", screenData > 0);
+  }
   // console.warn("We need to implement updateScreen")
 }
 
