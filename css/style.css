@@ -31,7 +31,7 @@ body {
         margin-left: calc(100vw / 2 - 180px);
         margin-top: calc(100vh /2 - 335px);
         -ms-grid-columns: 90px 90px 90px 90px;
-        -ms-grid-rows: 250px 70px 70px 70px 70px 70px 70px;
+        -ms-grid-rows: 250px 70px 70px 70px 70px 70px 70px 70px;
     }
 }
 
@@ -149,6 +149,12 @@ body {
 .item23 {
     -ms-grid-column: 4;
     -ms-grid-row: 7;
+}
+
+.item24{
+    -ms-grid-column: 1;
+    -ms-grid-row: 8;
+    -ms-grid-column-span: 4;
 }
 
 .grid-container>button {
