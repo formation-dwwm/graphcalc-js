@@ -1,4 +1,4 @@
-const CACHE_VERSION = 1.1;
+const CACHE_VERSION = 1.2;
 
 const BASE_CACHE_FILES = [
     'css/style.css',
