@@ -7,7 +7,6 @@ const BASE_CACHE_FILES = [
     'js/keyDetect.js',
     'js/toggleMode.js',
     'manifest.json',
-
 ];
 
 const OFFLINE_CACHE_FILES = [
