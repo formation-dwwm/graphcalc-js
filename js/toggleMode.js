@@ -14,7 +14,7 @@ function toggleMode() {
         currentMode = "calc";
     }
     clearKeyPressed();
-    clearCanvas();
+    // clearCanvas();
     colorBtnGraph();
   }
 

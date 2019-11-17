@@ -56,14 +56,14 @@ udpateCanvasSize = function () {
 }
 
 makeABoard = function () {
+
     udpateCanvasSize();
-    xValues = [];
-    for (let i = startX; i <= endX; i+=stepX) {
-        xValues.push(i);
-    };
+    // xValues = [];
+    // for (let i = startX; i <= endX; i+=stepX) {
+        // xValues.push(i);
+    // };
     clearCanvas();
-    makeAxes();
-};
+}
 
 makeAxes = function () {
     ctx.strokeStyle = "#000000";
@@ -74,12 +74,13 @@ makeAxes = function () {
     ctx.moveTo(midX, 0);
     ctx.lineTo(midX, canvasSize.y);
     ctx.stroke();
-};
+}
 // = press run this function
 
 drawGraph = function () {
 
     var boolInfinity= 0;
+    clearCanvas();
 
     ctx.strokeStyle = "#ff0000";
     ctx.lineWidth = 1;
@@ -117,7 +118,7 @@ drawGraph = function () {
         });
     }
     // debug log
-    console.table(points);
+    // console.table(points);
 
     // plot the points and stroke
     for (i=0; i<points.length; i++) {
@@ -151,7 +152,7 @@ drawGraph = function () {
             ctx.stroke();
         }
     }
-};
+}
 
 drawUserInput = function () {
     ctx.font = '10px arial';
@@ -166,7 +167,7 @@ function clearCanvas() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.strokeText(" ", 200, 290);
     makeAxes();
-};
+}
 
 window.onload = makeABoard;
 window.onresize = udpateCanvasSize;
